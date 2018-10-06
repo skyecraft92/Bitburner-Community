@@ -1,8 +1,21 @@
 import React from 'react'
-import TopAppBar from '../components/TopAppBar'
+
+const styles = {
+  root: {
+    flexGrow: 1,
+    height: 440,
+    zIndex: 1,
+    overflow: 'hidden',
+    position: 'relative',
+    display: 'flex',
+  }
+}
 
 const HomeView = () => {
-  return <TopAppBar />
+  return (
+    <div style={styles.root}>
+    </div>
+  )
 }
 
 export default HomeView

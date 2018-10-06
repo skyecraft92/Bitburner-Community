@@ -1,14 +1,32 @@
 {
   "name": "bitburner-community",
   "version": "0.1.0",
-  "private": true,
+  "description": "For inspiration, assistance, and discussion around the amazing cyperpunk-themed incremental RPG, Bitburner.",
   "dependencies": {
-    "@material-ui/core": "^3.1.2",
-    "@material-ui/icons": "^3.0.1",
+    "grommet": "^1.11.0",
     "react": "^16.5.2",
     "react-dom": "^16.5.2",
     "react-scripts": "2.0.4"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alexlee-dev/bitburner-community.git"
+  },
+  "keywords": [
+    "bitburner",
+    "hack",
+    "rpg",
+    "game",
+    "retro",
+    "cyber",
+    "punk"
+  ],
+  "author": "Alex Lee <www.alex-lee.site>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/alexlee-dev/bitburner-community/issues"
+  },
+  "homepage": "https://www.bitburnercommunity.site/",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",

@@ -1,14 +1,12 @@
 import React from 'react'
 import Sidebar from 'grommet/components/Sidebar'
 import Header from 'grommet/components/Header'
-import Title from 'grommet/components/Title'
-import Terminal from 'grommet/components/icons/base/Terminal'
 import Anchor from 'grommet/components/Anchor'
 import Box from 'grommet/components/Box'
 import Menu from 'grommet/components/Menu'
 import Heading from 'grommet/components/Heading'
-import Value from 'grommet/components/Value'
-import Cube from 'grommet/components/icons/base/Cube'
+import Logo from '../components/Logo'
+import TitleMenu from '../components/TitleMenu'
 
 const MainSidebar = () => {
   return (
@@ -20,33 +18,17 @@ const MainSidebar = () => {
       size="small"
     >
       <Box>
-        <Header justify="between" size="large" pad={{ horizontal: 'medium' }}>
-          <Title>
-            <Anchor
-              icon={<Terminal type="logo" size="large" />}
-              align="end"
-              href="/"
-            />
-          </Title>
-        </Header>
-        <Menu align="start" justify="between" size="small" primary={true}>
-          <Box pad="medium" size="medium">
-            <Heading tag="h3" margin="none">
-              Bitburner
-            </Heading>
-            <Heading tag="h3" strong>
-              Community
-            </Heading>
-            <Value value="0.40.4" icon={<Cube />} size="small" />
-          </Box>
-        </Menu>
+        <Logo />
+        <TitleMenu />
         <Menu align="start" size="small" primary={true}>
           <Anchor label="Overview" href="#overview" />
         </Menu>
         <Menu align="start" size="small" primary={true}>
-          <Header align="end" pad={{ horizontal: "medium" }}>
+          <Header align="end" pad={{ horizontal: 'medium' }}>
             <Box>
-              <Heading tag="h4" strong>Scripts</Heading>
+              <Heading tag="h4" strong>
+                Scripts
+              </Heading>
             </Box>
           </Header>
           <Anchor label="Script 1" />

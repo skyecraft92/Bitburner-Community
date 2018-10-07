@@ -8,33 +8,19 @@ import Headline from 'grommet/components/Headline'
 import Section from 'grommet/components/Section'
 import Paragraph from 'grommet/components/Paragraph'
 import Notification from 'grommet/components/Notification'
+import Tiles from 'grommet/components/Tiles'
+import Tile from 'grommet/components/Tile'
+import Card from 'grommet/components/Card'
+import MainHero from '../components/MainHero'
+import Overview from '../sections/Overview'
+import Scripts from '../sections/Scripts'
 
 const MainContent = () => {
   return (
     <Article primary>
-      <Hero
-        size="medium"
-        background={
-          <Image
-            full
-            src="https://res.cloudinary.com/alexlee-dev/image/upload/v1538871337/bitburner-community/programming.svg"
-          />
-        }
-      />
-      <Box pad="large">
-        <Heading>Bitburner Community</Heading>
-      </Box>
-      <Section pad={{ horizontal: 'large' }}>
-        <Heading pad={{ vertical: 'small' }} tag="h2" id="overview">
-          Overview
-        </Heading>
-        <Box>
-          <Paragraph>
-            For inspiration, assistance, and discussion around the amazing
-            cyperpunk-themed incremental RPG, Bitburner.
-          </Paragraph>
-        </Box>
-      </Section>
+      <MainHero />
+      <Overview />
+      <Scripts />
     </Article>
   )
 }

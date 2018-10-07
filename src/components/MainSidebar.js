@@ -7,6 +7,8 @@ import Anchor from 'grommet/components/Anchor'
 import Box from 'grommet/components/Box'
 import Menu from 'grommet/components/Menu'
 import Heading from 'grommet/components/Heading'
+import Value from 'grommet/components/Value'
+import Cube from 'grommet/components/icons/base/Cube'
 
 const MainSidebar = () => {
   return (
@@ -35,7 +37,11 @@ const MainSidebar = () => {
             <Heading tag="h3" strong>
               Community
             </Heading>
+            <Value value="0.40.4" icon={<Cube />} size="small" />
           </Box>
+        </Menu>
+        <Menu align="start" size="small" primary={true}>
+          <Anchor label="Overview" href="#overview" />
         </Menu>
         <Menu align="start" size="small" primary={true}>
           <Header align="end" pad={{ horizontal: "medium" }}>

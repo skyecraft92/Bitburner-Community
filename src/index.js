@@ -1,5 +1,5 @@
 import React from 'react'
-import ReactDOM from 'react-dom';
+import ReactDOM from 'react-dom'
 import * as serviceWorker from './serviceWorker'
 import App from 'grommet/components/App'
 import Split from 'grommet/components/Split'
@@ -8,7 +8,7 @@ import MainContent from './components/MainContent'
 
 ReactDOM.render(
   <App centered={false}>
-    <Split>
+    <Split flex="right">
       <MainSidebar />
       <MainContent />
     </Split>
